@@ -2,6 +2,7 @@
     # step read in sql query
     # step connect to mysql database
     # step load in Orders table through sql query
+    #? addtions: context manager, function for reading in all config files
     
 #%% #info module imports
 import pymysql
@@ -10,7 +11,6 @@ import yaml
 #%% #info read in text files. 
 sql = open(r'conf/sql/create_orders_table.sql', 'r').read()
 secrets = yaml.load(open(r'conf/secrets/creds.yaml'), Loader=yaml.FullLoader)
-#? addtions: context manager, function for reading in all config files
 #%% #info connect to mysql database
 conn = pymysql.connect(
     host=secrets['db_dppr-book']['host'],
