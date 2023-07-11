@@ -24,6 +24,10 @@ cursor = conn.cursor()
 statements = sql.split(";")
 for statement in statements:
     if statement.strip() != "":
-        print(statement)
+        # print(statement)
         cursor.execute(statement)
+
+conn.commit()
+cursor.close()
+conn.close()
 #%%
