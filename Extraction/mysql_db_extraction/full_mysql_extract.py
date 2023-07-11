@@ -19,7 +19,7 @@ import pandas as pd
 import warnings
 warnings.filterwarnings('ignore')
 #%% #info read text files
-sql = open(r'conf/sql/extract.sql', 'r').read()
+sql = open(r'conf/sql/full_mysql_extract.sql', 'r').read()
 secrets = yaml.load(open(r'conf/secrets/creds.yaml'), Loader=yaml.FullLoader)
 settings = yaml.load(open(r'conf/app/main.yaml'), Loader=yaml.FullLoader)
 

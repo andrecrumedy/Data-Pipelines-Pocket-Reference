@@ -1,4 +1,7 @@
-# Data Pipeines Pocket Reference: Moving and Processing Data for Analytics
+# Data Pipeines Pocket Reference: Moving and Processing Data for Analytics  
+Repo is updated daily as I work through all examples in this book. Repo structure is subjet to change.
+
+This repo for the code walkthroughs of this book and a place for me to showcase my Data Engineering skills with AWS and other Products. These examples will differ from the book such that I use best practice(based on experience or research) python libraires and techniques. Please see 'notes' section each python module's readme file for descriptions on the differences. It's organized with the same flow as the book: Extraction, Loading, Transformations, and Pipeline Orchestration. 
 
 ## `Environments: Python, AWS, MY SQL, Amazon Redshift`
 
@@ -11,7 +14,7 @@
 
 1. Setting and Amazon accoutn with 12 months free trial
 1. Creating Amazon S3 bucket(storage account) using default settings
-1. creating a IAM(Identity Access Management) from the console management and add "AmazonS3FullAccess" policy to the permission and getting access key, secret key, and account ID for the application to authneticate and access S3 bucket
+1. creating a IAM(Identity Access Management) from the console management and add "AmazonS3FullAccess" policy to the permission and getting access key, secret key, and account ID for the application to authenticate and access S3 bucket
 
 > MySQL Instance Set-up  
 
@@ -35,7 +38,8 @@ MySQL command-line client, MySQL Workbench, or pymysql python library
 ## `Project Run-Steps`  
 1. Configure Environments
 1. Run 'main.py' in /mysql_data_setup to load data in MySQL database
-1. Use MySQl Workbench to verify table creation in MySQL database.
-1. Rum 'main.py in /mysql_db_extraction to pipeline data from MySQL database to AmazonS3 bucket.
-1. Run 'main.py' in /redshift_data_setup tp load data in MySQL database
+1. Use MySQL Workbench to verify table creation in MySQL database.
+1. Run 'full_mysql_extract.py in /mysql_db_extraction to pipeline data from MySQL database to AmazonS3 bucket.
+1. Verify file in AmazonS3 bucket programitaclly or the AmazonS3 console
+1. Run 'main.py' in /redshift_data_setup to load data in MySQL database
 1. Run 'main.py in /redshift_db_extraction to pipeline data from Amazon Redshit data warehouse to AmazonS3 bucket.
