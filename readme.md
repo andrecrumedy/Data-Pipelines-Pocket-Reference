@@ -1,5 +1,5 @@
 # Data Pipeines Pocket Reference: Moving and Processing Data for Analytics  
-Repo is updated daily as I work through all examples in this book. Repo structure is subjet to change.
+Repo is updated daily as I work through all examples in this book. Repo structure is subject to change. 
 
 This repo for the code walkthroughs of this book and a place for me to showcase my Data Engineering skills with AWS and other Products. These examples will differ from the book such that I use best practice(based on experience or research) python libraires and techniques. Please see 'notes' section each python module's readme file for descriptions on the differences. It's organized with the same flow as the book: Extraction, Loading, Transformations, and Pipeline Orchestration. 
 
