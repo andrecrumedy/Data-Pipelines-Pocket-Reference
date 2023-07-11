@@ -24,9 +24,8 @@
 - /env: virtual environment folder *(not uploaded to git)*  
 - /mysql_data_setup: python module for MySQL table creation  
 - /mysql_db_extraction: python module for MySQL --> AmazonS3 bucket
-    - /conf:: config files for application
-    - main.py: main extraction pipeline code  
-- /secret: connection secrets *(not uploaded to git)*
+- __init__.py: to be recognized as python package
+- .gitignore: definition of files/folders not uploaded to repo
 
 > Interactions with MySQL instance  
 
