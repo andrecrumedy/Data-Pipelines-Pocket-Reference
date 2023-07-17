@@ -22,7 +22,7 @@ This repo for the code walkthroughs of this book and a place for me to showcase 
 - AWS free trial allows up to 750 usage (running databases) per month. I belive this is one database running constantly
 
 > Amazon Redshift Set-up
-- Amazon Redshift is a free trial not included in AWS Account 12 month free-tier. This is set-up through the console. Once the Redshift services is set-up. A Amazon cluster will need to be provisioned. I provisioned the lowest available setting with one node. The author does not provide any details on using the query editor or Redshift console. He defers to Amazon documentation.
+- Amazon Redshift is a free trial not included in AWS Account 12 month free-tier. This is set-up through the console. Once the Redshift services is set-up. By defautl, you get a serverless cluster. For learning purposes I provisioned A Amazon cluster will need to be provisioned. I provisioned the lowest available setting with one node. The author does not provide any details on using the query editor or Redshift console. He defers to Amazon documentation.
 
 ## `Project Set-up`  
 

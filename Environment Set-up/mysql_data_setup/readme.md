@@ -8,7 +8,7 @@
 
 >Notes
 
-- The book reccomends AWS documentation on how to use Amazon RDS set-up a MySQL instance. It also provide the query which creates and populates this database. 
+- The book reccomends AWS documentation on how to use Amazon RDS to set-up a MySQL instance. It also provide the query which creates and populates this database. 
 - The author does not provide instructions on connecting and querying this MySQL instance. The AWS documentation does give guidelines on connecting and querying using MySQL Workbench GUI appplication. 
 
 > `Upcoming Improvements`
