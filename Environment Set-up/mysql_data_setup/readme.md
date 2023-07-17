@@ -1,6 +1,7 @@
 # Setting Up MySQL Database for Extraction showcase  
->Purpose  
-- For repeatability of this project, I have made this module which connects and loads data into the instance for use by the "mysql_db_extracion" module.
+>Purpose 
+
+- For repeatability of this project and automatation, I have made this module which connects and loads data into the instance for use by the "mysql_db_extracion" python module.
 
 >Module Structure
 - /conf: configuration files such as secrets, credentials, queries, etc.
