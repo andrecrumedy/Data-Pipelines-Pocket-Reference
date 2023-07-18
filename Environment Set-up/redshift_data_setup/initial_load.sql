@@ -26,4 +26,10 @@ ALTER COLUMN OrderID TYPE BIGINT
 --script to drop table
 DROP TABLE IF EXISTS dppr_book.orders;
 
---script to see data in the data warehouse
+--sscript to remove two rows so incremental pipeline results can be seen
+DELETE 
+FROM dppr_book.orders
+WHERE LastUpdated > '2020-07-01'
+
+--
+SELECT * FROM dppr_book.orders

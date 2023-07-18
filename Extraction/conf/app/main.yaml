@@ -1,3 +1,7 @@
 aws_bucket:
   bucket_name: dppr-book
-  object_key: orders.parquet
+  file_names:
+    mysql_full_extract: orders_mysql_full.parquet
+    mysql_incremental_extract: orders_mysql_incremental.parquet
+    redshift_full_extract: orders_redshift_full.parquet
+    redshift_incremental_extract: orders_redshift_incremental.parquet
