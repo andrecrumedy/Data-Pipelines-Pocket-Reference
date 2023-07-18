@@ -88,7 +88,7 @@ df_to_s3_bucket(df=orders,
                 bucket_folder=settings['aws_bucket']['bucket_name'],
                 file_name=settings['aws_bucket']['file_names']['redshift_full_extract'])
 
-#%% #INFO PIPELINE: INCREMENTAL EXTRACTION FROM REDSHIFT TO S3 BUCKET
+#%% #INFO PIPELINE: INCREMENTAL EXTRACTION FROM MYSQL TO S3 BUCKET
 
     #info read in redshift query for lastupdated timestamp
 sql = open(r'conf/sql/redshift_last_updated.sql', 'r').read()
