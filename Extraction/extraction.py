@@ -9,14 +9,13 @@
 
 
 #%% #INFO LIBRARY IMPORTS
-import pymysql
-import csv
-import boto3
+import pymysql #info for mysql connection
+import boto3 #info for aws session
 import awswrangler as wr #info for connections to aws resources
 import redshift_connector #info for aws redshift connection
-import yaml
-import pandas as pd
-
+import yaml #info reading in yaml files
+import pandas as pd #info for pandas connection
+from pymysqlreplication import BinLogStreamReader, row_event #info reading mysql binlog
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -121,9 +120,10 @@ df_to_s3_bucket(df=orders,
                 bucket_folder=settings['aws_bucket']['bucket_name'],
                 file_name=settings['aws_bucket']['file_names']['redshift_incremental_extract'])
 
-# #INFO CONNECT AND QUERY AWS REDSHIFT FOR LAST UPDATED
+#%% #INFO PIPEINE: BINLONG REPLICATION FROM MYSQL TO S3 BUCKET
 
-#%% #INFO LIST ALL OBJECTS IN AWS S3 BUCKET
+
+# %% #INFO LIST ALL OBJECTS IN AWS S3 BUCKET
 print(wr.s3.list_objects(f's3://{settings["aws_bucket"]["bucket_name"]}/'))
 #%% #INFO DELETE OBJECT FROM AWS S3 BUCKET
 wr.s3.delete_objects(
